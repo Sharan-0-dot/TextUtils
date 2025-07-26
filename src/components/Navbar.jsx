@@ -34,7 +34,7 @@ function Navbar(props) {
                 </Link>
               </li>
             </ul>
-            <div className={`form-check form-switch text-${props.mode == 'dark' ? 'light' : 'dark'} mx-2`}>
+            <div className={`form-check form-switch text-${props.mode == 'dark' ? 'light' : 'dark'}`}>
               <input
                 className="form-check-input"
                 type="checkbox"

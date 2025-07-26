@@ -47,7 +47,10 @@ function TextForm(props) {
     </div>
     <div className="container" style={{color : props.mode == 'light' ? 'black' : 'white'}}>
         <h1>Text Summary</h1>
-        <p>{text.split(" ").length-1} words, {text.length} characters</p>
+        <p>
+            {text.split(/\s+/).filter(Boolean).length} words,{" "}
+            {text.replace(/\r?\n/g, "").length} characters
+        </p>
     </div>
     <div className="container" style={{color : props.mode == 'light' ? 'black' : 'white'}}>
         <h2>Preview</h2>
